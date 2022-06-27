@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHomePage">
+        <div class="bg-container pt-1 pb-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- I was Provide mobile view for only Home page and Contact us page. Otherwise code is too big -->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#">
+                                <!-- I am directly provide image links from web browser  -->
+                                <!-- Bootstrap -->
+                                <img src="https://i.pinimg.com/236x/58/d7/dd/58d7dd553b473160665d6fb513caf9ca--design-logos-design-typography.jpg" class="icon" />MusicWorld
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav ml-auto">
+                                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#" onclick="display('sectionTrendingSongs')">Trending Songs</a>
+                                    <a class="nav-link" href="#" onclick="display('sectionTopArtists')">Artists</a>
+                                    <a class="nav-link" href="#" onclick="display('sectionContactUs')">Contacts Us</a>
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2 d-lg-none d-xl-block" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-info my-2 my-sm-0 " type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="col-12 col-md-12 col-xl-12 col-lg-12 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <!--From Bootstrap -->
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://wallpaperaccess.com/full/7305226.jpg" class="d-inline d-md-none w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://3.bp.blogspot.com/--4oBnd_TxzA/WGi7j3FKD0I/AAAAAAABBAA/Twg3xs815PsVuLwS0vsb2w7ZMJv7-07fgCLcB/s1600/lyric%2Blove%2Byourself%2Bjustin%2Bbieber.jpg" class="d-inline d-md-none w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://i0.wp.com/www.worldtop2.com/wp-content/uploads/2019/11/Top-20-Best-English-Female-pop-Singers-of-2019.jpg" class="d-inline d-md-none w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-xl-12 col-lg-12 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://wallpaperaccess.com/full/7305226.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://3.bp.blogspot.com/--4oBnd_TxzA/WGi7j3FKD0I/AAAAAAABBAA/Twg3xs815PsVuLwS0vsb2w7ZMJv7-07fgCLcB/s1600/lyric%2Blove%2Byourself%2Bjustin%2Bbieber.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://i0.wp.com/www.worldtop2.com/wp-content/uploads/2019/11/Top-20-Best-English-Female-pop-Singers-of-2019.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex flex-row justify-content-end">
+                <button class="button" onclick="display('sectionSignUp')">Sign Up</button>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button-3" onclick="display('sectionCreateAccount')"><span><i class="fa-solid fa-plus"></i></span> Create New Account</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTrendingSongs">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/236x/58/d7/dd/58d7dd553b473160665d6fb513caf9ca--design-logos-design-typography.jpg" class="icon" />MusicWorld
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#">Home </a>
+                    <a class="nav-link active" href="#" onclick="display('sectionTrendingSongs')">Trending Songs<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#" onclick="display('sectionTopArtists')">Artists</a>
+                    <a class="nav-link" href="#" onclick="display('sectionContactUs')">Contacts Us</a>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 d-lg-none d-xl-block" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0 " type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="album-bg-container">
+            <div class="SongList">
+                <h1 class="trendingSongs-he">Trending Songs</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="https://www.kindpng.com/picc/m/155-1552457_imagine-dragons-origins-songs-hd-png-download.png" alt="1">
+                        <span>Enemy</span>
+                        <span class="songlistplay"><span class="timestamp">02:53 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://www.edsheeran.com/sites/g/files/g2000006291/f/202108/EdSheeran-opengraph.jpg" alt="1">
+                        <span>Joker & Queen</span>
+                        <span class="songlistplay"><span class="timestamp">03:14 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://static.wixstatic.com/media/e927be_ebc01621a6cd4d91a0e1f12f7d9d3667~mv2.jpg/v1/fit/w_600%2Ch_600%2Cal_c%2Cq_80/file.jpg" alt="1">
+                        <span>Bad Habits</span>
+                        <span class="songlistplay"><span class="timestamp">03:50 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://i.ytimg.com/vi/xb4iTsrCLuo/maxresdefault.jpg" alt="1">
+                        <span>Bam Bam</span>
+                        <span class="songlistplay"><span class="timestamp">03:26 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://a10.gaanacdn.com/gn_img/albums/mGjKrP1W6z/jKrPvDqVW6/size_l.jpg" alt="1">
+                        <span>As It Was</span>
+                        <span class="songlistplay"><span class="timestamp">02:47 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://images.genius.com/bc29e1ff20b4931dd9919f2ab5252b0e.1000x1000x1.jpg" alt="1">
+                        <span>Attention</span>
+                        <span class="songlistplay"><span class="timestamp">03:00 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://c.saavncdn.com/341/Proof-Korean-2022-20220614202104-500x500.jpg" alt="1">
+                        <span>Run BTS</span>
+                        <span class="songlistplay"><span class="timestamp">03:24 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/Z9bqkl1o3y/size_l.webp" alt="1">
+                        <span>Easy On Me</span>
+                        <span class="songlistplay"><span class="timestamp">03:44 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://a10.gaanacdn.com/gn_img/albums/qaLKY623pO/LKY6LRJ23p/size_l.jpg" alt="1">
+                        <span>All Too Well</span>
+                        <span class="songlistplay"><span class="timestamp">10:13 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="https://a10.gaanacdn.com/gn_img/albums/mGjKr1b6zX/GjKrD2aVW6/size_l.webp" alt="1">
+                        <span>Unstoppable</span>
+                        <span class="songlistplay"><span class="timestamp">03:37 <i class="far fa-play-circle"></i></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="songBanner"></div>
+        </div>
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" max="100">
+            <div class="icons">
+                <!-- fontawesome icons -->
+                <i class="fas fa-3x fa-step-backward"></i>
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward"></i>
+            </div>
+            <div class="songInfo">
+                <img src="https://gifimage.net/wp-content/uploads/2017/10/music-bars-gif.gif" width="42px" alt="">Bad Habits - Ed Sheeran
+            </div>
+            <button class="button-2" onclick="display('sectionHomePage')">Back</button>
+        </div>
+    </div>
+    <div id="sectionTopArtists">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/236x/58/d7/dd/58d7dd553b473160665d6fb513caf9ca--design-logos-design-typography.jpg" class="icon" />MusicWorld
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link " href="#" onclick="display('sectionHomePage')">Home</a>
+                    <a class="nav-link" href="#" onclick="display('sectionTrendingSongs')">Trending Songs</a>
+                    <a class="nav-link active" href="#" onclick="display('sectionTopArtists')">Artists<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#" onclick="display('sectionContactUs')">Contacts Us</a>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 d-lg-none d-xl-block" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0 " type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="topArtist-container">
+            <h1 class="Artist-head">About Artists</h1>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://i.ebayimg.com/images/g/oTgAAOSwN4Bd2MPK/s-l640.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Michael Jackson</h1>
+                    <p class="About-Artist">Date-of-birth: 29 Aug 1958
+                    </p>
+                    <p class="Followers">Followers: 1.6M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://s-media-cache-ak0.pinimg.com/236x/4a/94/24/4a9424dbaa3efe4ea6c1233438caefdd.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Taylor Swift</h1>
+                    <p class="About-Artist">Date-of-birth: 13 Dec 1989
+                    </p>
+                    <p class="Followers">Followers: 183M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://thesource.com/wp-content/uploads/2014/05/bieb.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Justin Bieber</h1>
+                    <p class="About-Artist">Date-of-birth: 01 Mar 1994
+                    </p>
+                    <p class="Followers">Followers: 150M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://www.superlive.id/storage/supermusic/6268_the_weeknd_starboy_yang_terus_meroket_large.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">The Weeknd</h1>
+                    <p class="About-Artist">Date-of-birth: 16 Feb 1990
+                    </p>
+                    <p class="Followers">Followers: 35M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://thestickyfacts.com/wp-content/uploads/featured-img/e/ed-sheeran.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Ed Sheeran</h1>
+                    <p class="About-Artist">Date-of-birth: 17 Feb 1991
+                    </p>
+                    <p class="Followers">Followers: 1.6M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://1.bp.blogspot.com/-z80bpSFxeu8/TVU9eyLHicI/AAAAAAAAAA8/WwzmX34m_0U/s320/00033002.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Eminem</h1>
+                    <p class="About-Artist">Date-of-birth: 17 Oct 1972
+                    </p>
+                    <p class="Followers">Followers: 34M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://66.media.tumblr.com/5f65a0408eea00d24c25c31071bb1407/tumblr_plybanCixT1qdzky1o2_500.png" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Billie Eilish</h1>
+                    <p class="About-Artist">Date-of-birth: 18 Dec 2001
+                    </p>
+                    <p class="Followers">Followers: 100M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://img.youtube.com/vi/oMMMyauphi8/0.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Adam Levine(Maroon5)</h1>
+                    <p class="About-Artist">Date-of-birth: 18 Mar 1979
+                    </p>
+                    <p class="Followers">Followers: 14.5M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://acrimonia.it/user/pages/06.articles/5996.ariana-grande-e-una-dei-protagonisti-della-campagna-reebok-ss18/arianagrandereebok_acrimoniamagazine1.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Ariana Grande</h1>
+                    <p class="About-Artist">Date-of-birth: 26 Jun 1993
+                    </p>
+                    <p class="Followers">Followers: 319M</p>
+                </div>
+            </div>
+            <div class="Artist-about-container d-flex flex-row">
+                <img src="https://www.aiming.in/wp-content/uploads/2017/03/Bruno-Mars-Image-768x576.jpg" class="image" />
+                <div class="Artist-container">
+                    <h1 class="Artist-name">Bruno Mars</h1>
+                    <p class="About-Artist">Date-of-birth: 08 Oct 1985
+                    </p>
+                    <p class="Followers">Followers: 25.7M</p>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button-2" onclick="display('sectionHomePage')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionContactUs">
+        <div class="Contact-container pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="text-center text-md-left">
+                            <img src="https://i.pinimg.com/236x/58/d7/dd/58d7dd553b473160665d6fb513caf9ca--design-logos-design-typography.jpg" class="logo" />
+                            <div class="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">
+                                <div class="icon-container">
+                                    <i class="fab fa-google icon"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fab fa-twitter icon"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fab fa-instagram icon"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa  fa-linkedin-square icon"></i>
+                                </div>
+                            </div>
+                            <p class="address">23, Amruth Nagar, AP, India.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h1 class="heading mb-3">Get to know us</h1>
+                        <ul class="section-list">
+                            <li class="section-list-item">About us</li>
+                            <li class="section-list-item">Career</li>
+                            <li class="section-list-item">Press Releases</li>
+                            <li class="section-list-item">Gift a smile</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h1 class="heading mb-3">Contact with us</h1>
+                        <ul class="section-list">
+                            <li class="section-list-item">Facebook</li>
+                            <li class="section-list-item">Twitter</li>
+                            <li class="section-list-item">Instagram</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h1 class="heading mb-3">Let us Help You</h1>
+                        <ul class="section-list">
+                            <li class="section-list-item">100% Pure Music</li>
+                            <li class="section-list-item">Your Account</li>
+                            <li class="section-list-item">Primium</li>
+                            <li class="section-list-item">Help</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="hr-line" />
+                <div class="text-center">
+                    <i class="fa fa-copyright icon" aria-hidden="true"></i>
+                    <span class="copyright">2022 by Nagendra. Created with Bootstrap</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end">
+                    <button class="button" onclick="display('sectionHomePage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionSignUp">
+        <div class="signUp-container">
+            <Center>
+                <h1 class="signup-head">Login Here</h1>
+                <form action="login.php" method="post">
+                    <table>
+                        <tr>
+                            <td class="signup-para">User Name:</td>
+                            <td>
+                                <input type="text" name="user">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="signup-para">Password:</td>
+                            <td>
+                                <input type="password" name="User_pass">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="submit" value="Login">
+                            </td>
+                            <td class="signup-para">Not yet a Member ?<a href="Sign Up"> Create New Account</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </Center>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button" onclick="display('sectionHomePage')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionCreateAccount">
+        <div class="signUp-container">
+            <Center>
+                <h1 class="signup-head">Create New Account</h1>
+                <form action="" method="">
+                    <table>
+                        <tr>
+                            <td class="signup-para">User Name:</td>
+                            <td>
+                                <input type="text" name="user" placeholder="ENTER Name Here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="signup-para">Password:</td>
+                            <td>
+                                <input type="password" name="User_pass" placeholder="ENTER Password Here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="signup-para">Email:</td>
+                            <td>
+                                <input type="email" name="mail" placeholder="ENTER Email Here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="signup-para">Gender:</td>
+                            <td>
+                                <input type="radio" name="gender"><span class="signup-para">Male</span>
+                                <input type="radio" name="gender"><span class="signup-para">Female</span>
+                                <input type="radio" name="gender">
+                                <spna class="signup-para">Others</spna>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="signup-para">Phone:</td>
+                            <td>
+                                <select>
+                                    <option selected>+91</option>
+                                    <option>+61</option>
+                                    <option>+94</option>
+                                    <option>+7</option>
+                                    <option>+92</option>
+                                </select>
+                                <input type="phone" name="mob_digits">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="sumbit" name="submit" value="Submit">
+                            </td>
+                            <td class="signup-para">Not yet a Member ?<a href="Sign Up.html">Sign Up Here</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </Center>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button" onclick="display('sectionHomePage')">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8084d841e9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

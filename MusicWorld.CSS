@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: #ffffff;
+    background-size: cover;
+    height: 100%;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+}
+
+.image {
+    width: 100%;
+}
+
+.Artists {
+    font-family: "Roboto";
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    padding-left: 32px;
+}
+
+.button {
+    font-family: "Arial";
+    font-size: 20px;
+    color: black;
+    height: 60;
+    width: 120px;
+    margin-top: 10px;
+    margin-right: 60px;
+    background-color: white;
+    border-color: #00ffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button-2 {
+    font-family: "Arial";
+    font-size: 20px;
+    color: #ffffff;
+    height: 60;
+    width: 120px;
+    margin-top: 10px;
+    background-color: #dc143c;
+    border-color: #dc143c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button-3 {
+    font-family: "Arial";
+    font-size: 20px;
+    color: black;
+    height: 60;
+    width: 250px;
+    margin-top: 10px;
+    margin-right: 60px;
+    background-color: white;
+    border-color: #00ffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.trendingSongs-he {
+    font-family: "Roboto";
+    color: white;
+    font-size: 50px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+.image-card {
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.album-bg-container {
+    background-image: url("https://www.teahub.io/photos/full/151-1510065_wallpaper-red-and-black-music.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.trendingSongs-card {
+    background-color: black;
+    height: 8vh;
+}
+
+
+
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: progress;
+}
+
+.songItemContainer {
+    margin-top: 54px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: black;
+    width: 80%;
+    color: white;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    margin-left: 10px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 2;
+    transition: opacity is ease-in;
+}
+
+.topArtist-container {
+    background-image: url("https://i.pinimg.com/originals/b6/dc/b2/b6dcb270eae6458889dc4f9b3d35cb56.jpg");
+    background-size: cover;
+}
+
+.Artist-head {
+    font-family: "Roboto";
+    color: white;
+    font-size: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.Artist-name {
+    font-family: "Roboto";
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.Artist-container {
+    padding: 5px;
+    background-color: black;
+    height: 100px;
+    margin: 10px;
+    width: 50%;
+}
+
+.Artist-about-container {
+    margin: 5px;
+}
+
+.image {
+    width: 110px;
+    height: 110px;
+    margin: 10px;
+    margin-left: 60px;
+}
+
+.About-Artist {
+    font-family: "Roboto";
+    font-size: 13px;
+    color: #5a7184;
+}
+
+.Followers {
+    font-family: "Roboto";
+    font-size: 10px;
+    color: white;
+}
+
+
+.Contact-container {
+    background-color: #0d2436;
+    background-size: cover;
+}
+
+.logo {
+    width: 160px;
+    height: 60px;
+}
+
+.icon-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 15px;
+    background-color: #152c3e;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.icon {
+    color: white;
+    font-size: 18px;
+}
+
+.address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.heading {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-list-item {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.hr-line {
+    background-color: white;
+}
+
+.copyright {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.signUp-container {
+    background-image: url("https://wallpapercave.com/wp/wp5345560.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.signup-head {
+    font-family: "Roboto";
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 35px;
+    margin-left: 5px;
+}
+
+.signup-para {
+    font-family: "Roboto";
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+}
